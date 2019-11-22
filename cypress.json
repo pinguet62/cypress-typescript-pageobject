@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://www.cypress.io",
+  "baseUrl": "https://docs.cypress.io",
   "env": {
   },
   "supportFile": "cypress/support/index.ts"
