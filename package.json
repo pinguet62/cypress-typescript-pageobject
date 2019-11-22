@@ -1,0 +1,24 @@
+{
+  "name": "cypress-typescript-pageobject",
+  "description": "Template for Cypress + TypeScript + Page-Object pattern",
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "eslint \"**/*.ts\"",
+    "start:debug": "cypress open",
+    "start": "cypress run"
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^4.1.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "cypress": "3.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "~12.12.11",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-cypress": "^2.7.0",
+    "typescript": "~3.7.2",
+    "webpack": "~4.41.2"
+  }
+}

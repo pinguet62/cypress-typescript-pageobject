@@ -1,0 +1,7 @@
+node_modules/
+cypress.env.json
+cypress/screenshots
+cypress/videos
+
+# IDEs
+.idea/

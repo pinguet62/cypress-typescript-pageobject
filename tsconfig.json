@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "types": [
+      "node",
+      "cypress"
+    ]
+  }
+}
