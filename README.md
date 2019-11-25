@@ -1,4 +1,6 @@
-# Pourquoi coder ses *tests e2e* en *TypeScript* à l'aide du pattern *Page Object* ?
+# Why implement *e2e tests* in *TypeScript* following *Page Object* pattern?
+
+[![CircleCI](https://circleci.com/gh/pinguet62/cypress-typescript-pageobject.svg?style=svg)](https://circleci.com/gh/pinguet62/cypress-typescript-pageobject)
 
 :information_source: Exemple basé sur Cypress/TypeScript. Cela peut être traduit en Selenium/Java ou tout autre outils/langage.
 
