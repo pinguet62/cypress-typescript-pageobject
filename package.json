@@ -10,15 +10,15 @@
   "dependencies": {
     "@cypress/webpack-preprocessor": "^4.1.1",
     "awesome-typescript-loader": "^5.2.1",
-    "cypress": "3.6.1"
+    "cypress": "3.8.0"
   },
   "devDependencies": {
-    "@types/node": "~12.12.11",
-    "@typescript-eslint/eslint-plugin": "^2.8.0",
-    "@typescript-eslint/parser": "^2.8.0",
-    "eslint": "^6.6.0",
-    "eslint-plugin-cypress": "^2.7.0",
-    "typescript": "~3.7.2",
-    "webpack": "~4.41.2"
+    "@types/node": "~13.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-cypress": "^2.8.1",
+    "typescript": "~3.7.4",
+    "webpack": "~4.41.4"
   }
 }
