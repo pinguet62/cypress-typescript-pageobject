@@ -1,6 +1,6 @@
 # Why implement *e2e tests* in *TypeScript* following *Page Object* pattern?
 
-[![CircleCI](https://circleci.com/gh/pinguet62/cypress-typescript-pageobject.svg?style=svg)](https://circleci.com/gh/pinguet62/cypress-typescript-pageobject)
+[![GitHub Actions](https://github.com/pinguet62/cypress-typescript-pageobject/workflows/CI/badge.svg?branch=master)](https://github.com/pinguet62/cypress-typescript-pageobject/actions?query=workflow%3ACI+branch%3Amaster)
 
 :information_source: Exemple basé sur Cypress/TypeScript. Cela peut être traduit en Selenium/Java ou tout autre outils/langage.
 
