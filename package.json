@@ -8,17 +8,17 @@
     "start": "cypress run"
   },
   "dependencies": {
-    "@cypress/webpack-preprocessor": "^4.1.1",
+    "@cypress/webpack-preprocessor": "^4.1.3",
     "awesome-typescript-loader": "^5.2.1",
-    "cypress": "3.8.0"
+    "cypress": "4.1.0"
   },
   "devDependencies": {
-    "@types/node": "~13.1.0",
-    "@typescript-eslint/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/parser": "^2.13.0",
+    "@types/node": "~13.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-cypress": "^2.8.1",
-    "typescript": "~3.7.4",
-    "webpack": "~4.41.4"
+    "eslint-plugin-cypress": "^2.10.3",
+    "typescript": "~3.8.3",
+    "webpack": "~4.42.0"
   }
 }
