@@ -1,4 +1,4 @@
-import {SearchRepositoriesPage} from "./search-repositories.page";
+import {SearchRepositoriesPage} from "./search";
 
 export class IndexPage {
     fillSearch(text: string) {

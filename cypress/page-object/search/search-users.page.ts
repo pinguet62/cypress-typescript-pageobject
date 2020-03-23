@@ -1,7 +1,8 @@
-import {UserPage} from "./user.page";
+import {UserPage} from "../user.page";
+import {SearchPage} from "./index";
 
-export class UsersSearchPage {
-    withUsers(fct: (divs: JQuery<HTMLDivElement>) => void) {
+export class SearchUsersPage extends SearchPage {
+    withUsers(fct: (users: JQuery<HTMLDivElement>) => void) {
         this.getUserItems().then(fct);
         return this;
     }

@@ -1,3 +1,5 @@
+const CircularDependencyPlugin = require('circular-dependency-plugin');
+
 module.exports = {
     resolve: {
         extensions: ['.ts', '.js']
@@ -9,5 +11,8 @@ module.exports = {
                 use: [{loader: 'awesome-typescript-loader'}]
             }
         ]
-    }
+    },
+    plugins: [
+      new CircularDependencyPlugin()
+    ]
 }
