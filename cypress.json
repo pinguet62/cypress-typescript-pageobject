@@ -1,5 +1,7 @@
 {
-  "baseUrl": "https://docs.cypress.io",
+  "baseUrl": "https://github.com",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
   "env": {
   },
   "supportFile": "cypress/support/index.ts"
