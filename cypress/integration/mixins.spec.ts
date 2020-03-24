@@ -1,19 +1,15 @@
 import {openApp} from "../page-object";
 
 describe("Mixins", () => {
-    it("Repositories/Users", () => {
+    it("Login fragment", () => {
         openApp()
-            .fillSearch("Spring{enter}")
+            .withLoginLink(link => expect(link.text().trim()).to.equal("Sign in"))
 
-            .withRepositories(repositories => expect(repositories.length).to.be.above(1))
-
+            .fillSearch("Pinguet62{enter}")
             .clickOnMenuUsers()
-            .withUsers(users => expect(users.length).to.be.above(1))
+            .clickOnUser(0)
 
-            .clickOnMenuRepositories()
-            .withRepositories(repositories => expect(repositories.length).to.be.above(1))
-
-            .clickOnMenuUsers()
-            .withUsers(users => expect(users.length).to.be.above(1));
+            .withLoginLink(link => expect(link.text().trim()).to.equal("Sign in"))
+            .clickOnRepositoriesTab();
     });
 });

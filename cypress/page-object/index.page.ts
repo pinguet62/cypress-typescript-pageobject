@@ -1,4 +1,6 @@
 import {SearchRepositoriesPage} from "./search";
+import {HeaderMixin} from "./header.mixin";
+import {applyMixins} from "../utils";
 
 export class IndexPage {
     fillSearch(text: string) {
@@ -6,8 +8,13 @@ export class IndexPage {
         return new SearchRepositoriesPage();
     }
 
-    withLoginLink(fct: (a: JQuery<HTMLAnchorElement>) => void) {
-        cy.get<HTMLAnchorElement>('a[href="/login"]').then(fct);
+    withLoginLink(fct: (link: JQuery<HTMLAnchorElement>) => void) {
+        cy.get<HTMLAnchorElement>('a.HeaderMenu-link[href^="/login"]').then(fct);
         return this;
     }
 }
+
+export interface IndexPage extends HeaderMixin { // eslint-disable-line @typescript-eslint/no-empty-interface
+}
+
+applyMixins(IndexPage, [HeaderMixin]);

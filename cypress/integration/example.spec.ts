@@ -1,10 +1,10 @@
 import {openApp} from "../page-object";
 
-describe("Samples", () => {
+describe("Example", () => {
     it("GitHub", () => {
         openApp()
             .withLoginLink(link => expect(link.text().trim()).to.equal("Sign in"))
-            .fillSearch("pinguet62{enter}")
+            .fillSearch("Pinguet62{enter}")
             .clickOnMenuUsers()
             .withUsers(users => expect(users.length).to.be.at.least(1))
             .clickOnUser(0)
