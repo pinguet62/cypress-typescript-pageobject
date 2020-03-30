@@ -1,10 +1,10 @@
-import {SearchRepositoriesPage} from "./search";
 import {HeaderMixin} from "./header.mixin";
+import {SearchRepositoriesPage} from "./search";
 import {applyMixins} from "../utils";
 
 export class IndexPage {
     fillSearch(text: string) {
-        cy.get('input[name=q]').type(text);
+        cy.get('input[name="q"]').type(text);
         return new SearchRepositoriesPage();
     }
 

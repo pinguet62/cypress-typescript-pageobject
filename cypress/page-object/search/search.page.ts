@@ -13,6 +13,6 @@ export class SearchPage {
 
     private clickOnMenuAndWait(type: string) {
         cy.get(`a.menu-item[href$='type=${type}']`).click();
-        cy.get('span.Progress.is-loading').should('not.exist'); // wait
+        cy.get("span.Progress.is-loading").should("not.exist"); // wait
     }
 }

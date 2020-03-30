@@ -14,7 +14,7 @@ export class UserRepositoriesPage {
     }
 
     clickOnRepository(index: number) {
-        this.getRepositories().find('a').eq(index).click();
+        this.getRepositories().find("a").eq(index).click();
         return new RepositoryPage();
     }
 

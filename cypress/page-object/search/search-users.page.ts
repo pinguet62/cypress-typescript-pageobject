@@ -1,5 +1,5 @@
-import {UserPage} from "../user.page";
 import {SearchPage} from "./index";
+import {UserPage} from "../user.page";
 
 export class SearchUsersPage extends SearchPage {
     withUsers(fct: (users: JQuery<HTMLDivElement>) => void) {
@@ -9,7 +9,7 @@ export class SearchUsersPage extends SearchPage {
 
     clickOnUser(index: number) {
         this.getUserItems().eq(index)
-            .find('a.mr-1').click();
+            .find("a.mr-1").click();
         return new UserPage();
     }
 
