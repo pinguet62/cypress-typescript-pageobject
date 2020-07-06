@@ -1,6 +1,6 @@
 import {openApp} from "../page-object";
 
-describe("Example", () => {
+describe("Page object", () => {
     it("GitHub", () => {
         openApp()
             .withLoginLink(link => expect(link.text().trim()).to.equal("Sign in"))
