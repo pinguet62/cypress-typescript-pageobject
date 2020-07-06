@@ -1,4 +1,4 @@
-type Type<T = {}> = new (...args: any[]) => T;
+type Type<T = any> = new (...args: any[]) => T;
 
 export function applyMixins(derivedCtor: Type, baseCtors: Type[]) {
     baseCtors.forEach(baseCtor => {
