@@ -3,7 +3,7 @@ describe("Example", () => {
         cy.visit("/");
         cy.get<HTMLAnchorElement>('a.HeaderMenu-link[href^="/login"]').then(link => expect(link.text().trim()).to.equal("Sign in"));
         cy.get('input[name="q"]').type("Pinguet62{enter}");
-        cy.get("a.menu-item[href$='type=Users']").click();
+        cy.get("a.menu-item[href$='type=users']").click();
         cy.get("span.Progress.is-loading").should("not.exist"); // wait
         cy.get<HTMLDivElement>(".user-list > .user-list-item").then(users => expect(users.length).to.be.at.least(1));
         cy.get<HTMLDivElement>(".user-list > .user-list-item").eq(0).find("a.mr-1").click();

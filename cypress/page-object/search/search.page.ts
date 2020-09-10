@@ -2,12 +2,12 @@ import {SearchRepositoriesPage, SearchUsersPage} from "./index";
 
 export class SearchPage {
     clickOnMenuRepositories() {
-        this.clickOnMenuAndWait("Repositories");
+        this.clickOnMenuAndWait("repositories");
         return new SearchRepositoriesPage();
     }
 
     clickOnMenuUsers() {
-        this.clickOnMenuAndWait("Users");
+        this.clickOnMenuAndWait("users");
         return new SearchUsersPage();
     }
 
