@@ -1,8 +1,0 @@
-{
-  "extends": "tslint:recommended",
-  "rules": {
-    "max-line-length": false,
-    "no-var-requires": false,
-    "object-literal-sort-keys": false
-  }
-}
