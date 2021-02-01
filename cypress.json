@@ -1,6 +1,9 @@
 {
   "baseUrl": "https://github.com",
-  "ignoreTestFiles": "**/api/**/*.*",
+  "ignoreTestFiles": [
+    "**/api/**/*.*",
+    "**/*.md"
+  ],
   "viewportWidth": 1920,
   "viewportHeight": 1080,
   "env": {
