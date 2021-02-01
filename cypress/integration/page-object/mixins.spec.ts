@@ -1,4 +1,4 @@
-import {openApp} from "../page-object";
+import {openApp} from "./api";
 
 describe("Mixins", () => {
     it("Login fragment", () => {

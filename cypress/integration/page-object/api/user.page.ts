@@ -1,6 +1,6 @@
 import {HeaderMixin} from "./header.mixin";
 import {UserRepositoriesPage} from "./user-repositories.page";
-import {applyMixins} from "../utils";
+import {applyMixins} from "../../../utils";
 
 export class UserPage {
     clickOnRepositoriesTab() {

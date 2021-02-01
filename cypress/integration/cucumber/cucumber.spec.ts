@@ -1,4 +1,4 @@
-import {givenIAmNotLogged} from "../cucumber";
+import {givenIAmNotLogged} from "./api";
 
 describe("Cucumber", () => {
     it("Test", () => {

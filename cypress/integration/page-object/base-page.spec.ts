@@ -1,4 +1,4 @@
-import {openApp} from "../page-object";
+import {openApp} from "./api";
 
 describe("Base page", () => {
     it("Search page: Repositories/Users", () => {
