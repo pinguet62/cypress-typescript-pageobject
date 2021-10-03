@@ -1,12 +1,12 @@
 describe("Example", () => {
     it("GitHub", () => {
         cy.visit("/");
-        cy.get<HTMLAnchorElement>('a.HeaderMenu-link[href^="/login"]').then(link => expect(link.text().trim()).to.equal("Sign in"));
+        cy.get<HTMLAnchorElement>('a.HeaderMenu-link[href^="/login"]').then(link => expect(link.text().trim()).to.equal("Sign in"));
         cy.get('input[name="q"]').type("Pinguet62{enter}");
         cy.get("a.menu-item[href$='type=users']").click();
         cy.get("span.Progress.is-loading").should("not.exist"); // wait
-        cy.get<HTMLDivElement>(".user-list > .user-list-item").then(users => expect(users.length).to.be.at.least(1));
-        cy.get<HTMLDivElement>(".user-list > .user-list-item").eq(0).find("a.mr-1").click();
+        cy.get<HTMLDivElement>("#user_search_results .Box-row").then(users => expect(users.length).to.be.at.least(1));
+        cy.get<HTMLDivElement>("#user_search_results .Box-row").eq(0).find("a.mr-1").click();
         cy.get("nav.UnderlineNav-body").find("a").eq(1).click();
         cy.get("input#your-repos-filter").type("cypress-typescript-pageobject");
         cy.url().should("contains", "cypress-typescript-pageobject"); // wait

@@ -3,15 +3,21 @@
 ## What?
 
 ```gherkin
-Given I am not logged
-When I search the user
-Then I see him in list
+Feature: Search user
+    Scenario: Found user
+        Given I am not logged
+        When I search the user
+        Then I see him in list
 ```
 
 ```typescript
- givenIAmNotLogged()
-.whenISearchTheUser("Pinguet62{enter}")
-.thenISeeHimInList();
+describe("Search user", () => {
+    it("Found user", () => {
+         givenIAmNotLogged()
+        .whenISearchTheUser("Pinguet62{enter}")
+        .thenISeeHimInList()
+    });
+});
 ```
 
 ## Why?

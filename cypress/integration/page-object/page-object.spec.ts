@@ -3,7 +3,7 @@ import {openApp} from "./api";
 describe("Page object", () => {
     it("GitHub", () => {
         openApp()
-            .withLoginLink(link => expect(link.text().trim()).to.equal("Sign in"))
+            .withLoginLink(link => expect(link.text().trim()).to.equal("Sign in"))
             .fillSearch("Pinguet62{enter}")
             .clickOnMenuUsers()
             .withUsers(users => expect(users.length).to.be.at.least(1))

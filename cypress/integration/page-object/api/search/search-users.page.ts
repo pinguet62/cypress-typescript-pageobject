@@ -14,6 +14,6 @@ export class SearchUsersPage extends SearchPage {
     }
 
     private getUserItems() {
-        return cy.get<HTMLDivElement>(".user-list > .user-list-item");
+        return cy.get<HTMLDivElement>("#user_search_results .Box-row");
     }
 }
